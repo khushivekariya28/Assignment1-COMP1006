@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pizza Order Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Pizza Order Form</h1>
+  <form action="submit.php" method="post">
+    <!-- Name input -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <!-- Select Pizza Size -->
+    <label for="size">Pizza Size:</label>
+    <select id="size" name="size" required>
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="large">Large</option>
+    </select>
+    <br>
+    <!-- Select Toppings -->
+    <label for="toppings">Toppings:</label>
+    <input type="text" id="toppings" name="toppings" required>
+    <br>
+    <!-- Delivery address -->
+    <label for="delivery">Delivery Address:</label>
+    <textarea id="delivery" name="delivery" required></textarea>
+    <br>
+    <!-- Submit button -->
+    <input type="submit" value="Place Order">
+  </form>
+</body>
+</html>
